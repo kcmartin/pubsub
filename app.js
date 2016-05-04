@@ -2,7 +2,7 @@
 
 var express = require('express')
 var app = express();
-var badges = require('/controllers/badges');
+var badges = require('./controllers/badges');
 
 app.use(express.json());
 

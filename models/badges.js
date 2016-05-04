@@ -1,6 +1,6 @@
 'use strict';
 
-var redis require('../lib/redis');
+var redis = require('../lib/redis');
 
 /**
 *  Save badges to database

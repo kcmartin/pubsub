@@ -18,3 +18,11 @@ exports.save = function(badges, callback) {
       exports.save(badges, callback);
   });
 };
+
+/**
+*  Trim down the redis list to 10 items
+*/
+
+exports.trim = function() {
+  redis.ltrim('badges', 0, 9);
+}
